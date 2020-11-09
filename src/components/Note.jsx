@@ -1,13 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-function Note() {
-
-  const year = new Date().getFullYear();
-
-  return <div class="note">
-    <h1 class="h1">This is the title</h1>
-    <p>This is the content</p>
+function Note(props) {
+  return <div className="note">
+    <h1>{props.title}</h1>
+    <p>{props.content}</p>
   </div>
 }
 
